@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 50px;
+  background-image: url("./assets/BrickWall.jpg");
+}
+  .black-container { 
+    display: flex;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .image { 
+    width: 30%;
+  }
+
+  .button-container { 
+    width: 100%;
+    display: flex;
+    margin-top: 6%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .button { 
+    width: 222px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #3399ff
+    
+  }
+  .button-text { 
+    font-size: 15px;
+  }
+
+  button:hover {
+    filter:opacity(0.8)
+  }
+
+  .black-container { 
+    padding-bottom: 5%
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .button-container { 
+      margin-top: 20%;
+    }
+
+    .button {
+      width: 180px;
+      margin-bottom: 20%
+    }
+    .button-text { 
+      font-size: 12px;
+    }
+    .image { 
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+  }
